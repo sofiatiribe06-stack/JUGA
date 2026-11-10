@@ -1665,6 +1665,11 @@ background-image:
     font-size: 30px;
     font-weight: 900;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 24px;
 }
 
 /* QUITAR BORDE SOLO EN INICIO, JUEGOS Y RESERVAS */
@@ -1935,4 +1940,34 @@ nav a.pagina-activa::after {
     inset: 0;
     background: rgba(28, 13, 2, 0.45);
     z-index: -1;
+}
+
+/* CORRECCIÓN CARTA EN CELULARES */
+@media (max-width: 600px) {
+    .snacks {
+        transform: none;
+    }
+}
+
+/* CORRECCIÓN RESERVAS EN CELULARES */
+@media (max-width: 600px) {
+    .formulario-reservas {
+        width: 90%;
+        margin: 30px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .campos-reserva {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* TITULO RESERVAS EN CELULARES */
+@media (max-width: 600px) {
+    .texto-portada-reservas h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
 }
