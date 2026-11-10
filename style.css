@@ -1,0 +1,1938 @@
+
+:root {
+    --azul: #3543CE;
+    --rojo: #FF0000;
+    --amarillo: #FEE605;
+    --gris: #DDDDDD;
+    --marron: #1C0D02;
+    --crema: #F9F6E4;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--marron);
+    font-weight: bold;
+}
+
+p {
+    color: var(--marron);
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* MENU PRINCIPAL */
+
+header {
+    background-color: var(--crema);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* LOGO */
+
+.logo {
+    color: var(--amarillo);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* ENLACES DEL MENU */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--crema);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--amarillo);
+}
+
+/* PORTADA PRINCIPAL */
+
+.portada {
+    min-height: 650px;
+    background-color: var(--crema);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.texto-portada {
+    max-width: 650px;
+}
+
+.texto-portada h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    color: var(--azul);
+    margin-bottom: 25px;
+}
+
+.texto-portada p {
+    font-size: 22px;
+    color: var(--marron);
+    margin-bottom: 35px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: var(--crema);
+    padding: 18px 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PORTADA JUGA */
+
+.portada {
+    min-height: 800px;
+    position: relative;
+    background-image:
+        linear-gradient(rgba(28,13,2,0.55), rgba(28,13,2,0.55)),
+        url("img/portada.png.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    box-sizing: border-box;
+}
+
+.texto-portada {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.texto-portada h1 {
+    color: var(--crema);
+    font-size: 62px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.texto-portada h1 span {
+    color: var(--amarillo);
+}
+
+.texto-portada p {
+    color: var(--crema);
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-portada {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--crema);
+    font-size: 75px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px var(--marron);
+    z-index: 2;
+}
+
+/* CORRECCION DEL MENU */
+
+header {
+    background-color: var(--crema);
+    height: 95px;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid var(--gris);
+border-radius: 50px;
+margin: 14px 20px 0;
+}
+
+.logo {
+    color: var(--marron);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--marron);
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+/* AJUSTE DE POSICION DE PORTADA */
+
+.portada {
+    align-items: flex-start;
+    padding-top: 110px;
+    min-height: calc(100vh - 95px);
+    box-sizing: border-box;
+}
+
+.texto-portada {
+    margin-top: 0;
+}
+
+/* AJUSTE FINAL DEL TITULO */
+
+.texto-portada {
+    transform: translateY(-55px);
+}
+
+.texto-portada h1 {
+    font-size: 60px;
+    line-height: 1.15;
+}
+
+/* TAMAÑO DEL LOGO SUPERIOR */
+
+.logo img {
+    width: 125px;
+    height: auto;
+    max-width: 125px;
+    display: block;
+    object-fit: contain;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+/* LOGO GRANDE DE PORTADA */
+
+.logo-portada img {
+    width: 400px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.portada {
+    position: relative;
+}
+
+.logo-portada {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.logo-portada img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+/* =================================
+   SECCION JUEGOS
+================================= */
+
+.seccion-juegos {
+    background-color: var(--crema);
+}
+
+/* BANNER PRINCIPAL */
+
+.banner-juegos {
+    min-height: 377px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 45px 50px;
+    box-sizing: border-box;
+
+background-image:
+    linear-gradient(rgba(28,13,2,0.55), rgba(28,13,2,0.55)),
+    url("img/juegos_png.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-banner-juegos {
+    position: relative;
+    z-index: 2;
+}
+
+.texto-banner-juegos h2 {
+    color: var(--crema);
+    font-size: 65px;
+    line-height: 1.15;
+    margin: 0 0 35px;
+    font-weight: 900;
+    max-width: 520px;
+}
+.texto-banner-juegos h2 span {
+    color: var(--amarillo);
+}
+
+.texto-banner-juegos p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* CONTENIDO Y FILTROS */
+
+.contenido-juegos {
+    padding: 25px 45px 45px;
+}
+
+.filtros-juegos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filtros-juegos h3 {
+    font-size: 23px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.filtro {
+    background-color: var(--crema);
+    border: 1px solid var(--gris);
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 16px;
+    color: var(--marron);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filtro.activo {
+    background-color: var(--rojo);
+    color: white;
+    border-color: var(--rojo);
+    font-weight: bold;
+}
+
+.filtro-dificultad {
+    background-color: var(--crema);
+    border: 1px solid var(--gris);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: var(--marron);
+    cursor: pointer;
+}
+
+/* GRILLA DE JUEGOS */
+
+.grilla-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 1fr;
+    gap: 40px 30px;
+    align-items: stretch;
+}
+
+/* TARJETAS */
+
+.tarjeta-juego {
+    height: 158px;
+    box-sizing: border-box;
+    border: 4px solid;
+    border-radius: 32px;
+    padding: 16px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tarjeta-juego h3 {
+    font-size: 29px;
+    margin: 0 0 16px;
+}
+
+.tarjeta-juego p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* COLORES DE LAS TARJETAS */
+
+.truco {
+    border-color: var(--amarillo);
+}
+
+.generala {
+    border-color: var(--azul);
+}
+
+.teg {
+    border-color: var(--rojo);
+}
+
+.uno {
+    border-color: var(--rojo);
+}
+
+.burako {
+    border-color: var(--amarillo);
+}
+
+.jenga {
+    border-color: var(--azul);
+}
+
+/* RECOMENDACIONES */
+
+.recomendaciones-juegos {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+
+    border: 4px solid var(--gris);
+    border-radius: 35px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.recomendaciones-juegos h3 {
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+
+.recomendaciones-juegos h3 span {
+    color: var(--azul);
+}
+
+.recomendaciones-juegos p {
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 0 0 30px;
+}
+
+.boton-recomendaciones {
+    display: inline-block;
+    background-color: var(--azul);
+    color: white;
+    padding: 11px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* ADAPTACION A PANTALLAS PEQUEÑAS */
+
+@media (max-width: 900px) {
+.grilla-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+    align-items: stretch;
+}
+    .recomendaciones-juegos {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .filtros-juegos {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-juegos {
+        min-height: 350px;
+        padding: 30px 25px;
+    }
+
+    .texto-banner-juegos h2 {
+        font-size: 42px;
+    }
+
+    .asterisco-juegos {
+        display: none;
+    }
+
+    .grilla-juegos {
+        grid-template-columns: 1fr;
+    }
+
+    .contenido-juegos {
+        padding: 25px 20px;
+    }
+}
+
+/* =================================
+   SECCIÓN CARTA - JUGA
+================================= */
+
+.seccion-carta {
+    background-color: var(--crema);
+    padding: 45px 48px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 30px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* PRESENTACIÓN */
+
+.intro-carta {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    align-self: start;
+}
+
+.intro-carta h2 {
+    font-size: 65px;
+    line-height: 1.18;
+    font-weight: 900;
+    margin: 0 0 15px;
+    color: var(--marron);
+}
+
+.intro-carta h2 span {
+    color: var(--azul);
+}
+
+.intro-carta p {
+    font-size: 21px;
+    line-height: 1.25;
+    margin: 0;
+    color: var(--marron);
+}
+
+.asterisco-carta {
+    position: absolute;
+    right: 0;
+    top: 125px;
+    font-size: 105px;
+    color: var(--gris);
+}
+
+/* BLOQUES DE LA CARTA */
+
+.bloque-carta {
+    width: 100%;
+    max-width: 450px;
+    height: 342px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bloque-carta h3 {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 900;
+    margin: 0 10px;
+    height: 105px;
+    flex-shrink: 0;
+    padding-top: 3px;
+    box-sizing: border-box;
+    color: var(--marron);
+}
+
+/* COLORES */
+
+.comida {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    background-color: var(--amarillo);
+}
+
+.snacks {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+    background-color: var(--gris);
+    border: 1px solid var(--amarillo);
+    transform: translateX(-50px);
+}
+
+.bebidas {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    justify-self: center;
+    background-color: var(--rojo);
+}
+
+.postres {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    justify-self: center;
+    background-color: var(--azul);
+}
+
+/* LISTA DE PRODUCTOS */
+
+.lista-carta {
+    background-color: var(--crema);
+    border-radius: 11px;
+    padding: 7px 18px;
+    margin-top: 0;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.producto-carta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(28, 13, 2, 0.20);
+}
+
+.producto-carta:last-child {
+    border-bottom: none;
+}
+
+.producto-carta strong {
+    display: block;
+    font-size: 19px;
+    line-height: 1.15;
+    font-weight: bold;
+    color: var(--marron);
+}
+
+.producto-carta p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 0;
+    color: var(--marron);
+}
+
+.producto-carta span {
+    font-size: 19px;
+    white-space: nowrap;
+    color: var(--marron);
+    padding-top: 1px;
+}
+/* AJUSTE DE DISTRIBUCIÓN DE CARTA */
+
+@media (min-width: 1101px) {
+    .seccion-carta {
+        grid-template-columns: 380px minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .seccion-carta {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+        padding: 35px 30px;
+    }
+
+    .intro-carta {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .comida,
+    .snacks,
+    .bebidas,
+    .postres {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+        width: 100%;
+    }
+
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .seccion-carta {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .intro-carta {
+        grid-column: 1;
+    }
+
+    .intro-carta h2 {
+        font-size: 48px;
+    }
+
+    .intro-carta p {
+        font-size: 18px;
+    }
+
+    .asterisco-carta {
+        font-size: 70px;
+        right: 15px;
+        top: 100px;
+    }
+
+    .bloque-carta {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+        max-width: 450px;
+        height: 342px;
+    }
+
+    .bloque-carta h3 {
+        font-size: 38px;
+    }
+}
+
+/* =====================================
+   ADAPTACION RESPONSIVE - JUGA
+===================================== */
+
+/* MENU HAMBURGUESA */
+
+.menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    /* JUEGOS */
+
+    .grilla-juegos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .recomendaciones-juegos {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .filtros-juegos {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    /* PORTADA */
+
+    .portada {
+        padding: 60px 35px;
+    }
+
+    /* CARTA */
+
+    .seccion-carta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    /* MENU */
+
+    header {
+        width: calc(100% - 30px);
+        height: 85px;
+        margin: 12px auto;
+        padding: 0 22px;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 32px;
+        height: 4px;
+        background-color: var(--marron);
+        border-radius: 5px;
+    }
+
+    header {
+    position: relative;
+    z-index: 1000;
+}
+
+    header nav {
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    background-color: var(--crema);
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: none;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1001;
+    border-radius: 0 0 20px 20px;
+}
+
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    header nav a {
+        margin: 0;
+        font-size: 18px;
+    }
+
+
+    /* PORTADA PRINCIPAL */
+
+    .portada {
+        min-height: 720px;
+        height: auto;
+        padding: 65px 28px 180px;
+        align-items: flex-start;
+        background-position: center;
+    }
+
+    .texto-portada {
+        max-width: 100%;
+        transform: none;
+    }
+
+    .texto-portada h1 {
+        font-size: clamp(43px, 12vw, 55px);
+        line-height: 1.12;
+        margin-bottom: 22px;
+    }
+
+    .texto-portada p {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 28px;
+    }
+
+    .boton {
+        font-size: 18px;
+        padding: 16px 22px;
+    }
+
+    .logo-portada {
+        bottom: 20px;
+    }
+
+    .logo-portada img {
+        width: 230px;
+        max-width: 75vw;
+    }
+
+
+    /* SECCION JUEGOS */
+
+    .banner-juegos {
+        min-height: 330px;
+        padding: 35px 25px;
+        background-position: center;
+    }
+
+    .texto-banner-juegos h2 {
+        font-size: 43px;
+        line-height: 1.1;
+        margin-bottom: 22px;
+    }
+
+    .texto-banner-juegos p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .contenido-juegos {
+        padding: 25px 20px 35px;
+    }
+
+    .filtros-juegos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .filtros-juegos h3 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .filtro,
+    .filtro-dificultad {
+        font-size: 13px;
+        padding: 9px 13px;
+    }
+
+    .grilla-juegos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-juego {
+        width: 100%;
+        height: auto;
+        min-height: 135px;
+        padding: 20px 25px;
+        border-radius: 27px;
+    }
+
+    .tarjeta-juego h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+
+    .tarjeta-juego p {
+        font-size: 17px;
+    }
+
+    .recomendaciones-juegos {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 30px 20px;
+        min-height: 300px;
+    }
+
+    .recomendaciones-juegos h3 {
+        font-size: 27px;
+    }
+
+    .recomendaciones-juegos p {
+        font-size: 17px;
+    }
+
+    .boton-recomendaciones {
+        font-size: 15px;
+        white-space: normal;
+    }
+
+
+    /* SECCION CARTA */
+
+    .seccion-carta {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 35px 20px 45px;
+        gap: 22px;
+    }
+
+    .intro-carta {
+        grid-column: 1;
+        grid-row: auto;
+        margin-bottom: 5px;
+    }
+
+    .intro-carta h2 {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .intro-carta p {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .asterisco-carta {
+        font-size: 65px;
+        right: 10px;
+        top: 85px;
+    }
+
+    .bloque-carta {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        min-height: 270px;
+        padding: 8px;
+        border-radius: 25px;
+        overflow: visible;
+    }
+
+    .bloque-carta h3 {
+        font-size: 36px;
+        height: 85px;
+        padding-top: 5px;
+        margin: 0 10px;
+    }
+
+    .lista-carta {
+        flex: none;
+        min-height: 0;
+        padding: 12px 15px;
+        overflow: visible;
+    }
+
+    .producto-carta {
+        gap: 8px;
+        padding: 7px 0;
+    }
+
+    .producto-carta strong {
+        font-size: 16px;
+    }
+
+    .producto-carta p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .producto-carta span {
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 600px) {
+
+    header nav {
+        display: none !important;
+    }
+
+    header .menu-toggle:checked ~ nav {
+        display: flex !important;
+    }
+
+}
+
+
+/* ============================= */
+/*        PÁGINA EVENTOS         */
+/* ============================= */
+
+.presentacion-eventos {
+    padding: 45px 45px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.titulo-eventos {
+    flex: 1;
+}
+
+.titulo-eventos h1 {
+    font-size: 65px;
+    line-height: 1.18;
+    font-weight: 900;
+    color: var(--marron);
+    margin: 0;
+}
+
+.titulo-eventos h1 span {
+    color: var(--azul);
+}
+
+.texto-eventos {
+    width: 350px;
+    flex-shrink: 0;
+    font-size: 21px;
+    line-height: 1.25;
+    margin-right: 260px;
+    padding-top: 5px;
+}
+
+.texto-eventos p {
+    margin: 0;
+}
+
+/* PRÓXIMOS EVENTOS */
+
+.proximos-eventos {
+    padding: 10px 45px 25px;
+}
+
+.proximos-eventos h2,
+.mas-experiencias h2 {
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--marron);
+    margin: 0 0 18px;
+}
+
+.contenedor-eventos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tarjeta-evento {
+    height: 220px;
+    border-radius: 22px;
+    padding: 6px;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.torneo {
+    background-color: var(--azul);
+}
+
+.tematica {
+    background-color: var(--rojo);
+}
+
+.clasico {
+    background-color: var(--amarillo);
+}
+
+.fecha-evento {
+    width: 108px;
+    flex-shrink: 0;
+    color: var(--crema);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.clasico .fecha-evento {
+    color: var(--marron);
+}
+
+.fecha-evento strong {
+    font-size: 38px;
+    line-height: 1;
+}
+
+.fecha-evento span {
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.fecha-evento small {
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid currentColor;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info-evento {
+    background-color: var(--crema);
+    border-radius: 20px;
+    flex: 1;
+    padding: 28px 14px 12px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.etiqueta-evento {
+    border: 1px solid currentColor;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.torneo .etiqueta-evento {
+    color: var(--azul);
+}
+
+.tematica .etiqueta-evento {
+    color: var(--rojo);
+}
+
+.clasico .etiqueta-evento {
+    color: #B39B00;
+}
+
+.info-evento h3 {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 10px 0 14px;
+    color: var(--marron);
+}
+
+.info-evento p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.datos-evento {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    border-top: 1px solid var(--marron);
+    padding-top: 8px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+/* MÁS EXPERIENCIAS */
+
+.mas-experiencias {
+    padding: 10px 45px 35px;
+}
+
+.contenedor-experiencias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+.experiencia {
+    background-color: var(--gris);
+    border-radius: 24px;
+    min-height: 145px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.experiencia h3 {
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 0 12px;
+    color: var(--marron);
+}
+
+.experiencia p {
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--marron);
+}
+
+.icono-experiencia {
+    font-size: 42px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.icono-experiencia.azul {
+    color: var(--azul);
+}
+
+.icono-experiencia.rojo {
+    color: var(--rojo);
+}
+
+.icono-experiencia.amarillo {
+    color: var(--amarillo);
+}
+
+.flecha-experiencia {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border: 1px solid var(--marron);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--marron);
+    margin-left: auto;
+}
+
+/* ADAPTACIÓN A PANTALLAS MÁS CHICAS */
+
+@media (max-width: 1100px) {
+    .texto-eventos {
+        margin-right: 40px;
+    }
+
+    .titulo-eventos h1 {
+        font-size: 48px;
+    }
+
+    .contenedor-eventos {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-experiencias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .presentacion-eventos {
+        flex-direction: column;
+        padding: 35px 20px 20px;
+    }
+
+    .titulo-eventos h1 {
+        font-size: 36px;
+    }
+
+    .texto-eventos {
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .proximos-eventos,
+    .mas-experiencias {
+        padding: 15px 20px;
+    }
+
+    .proximos-eventos h2,
+    .mas-experiencias h2 {
+        font-size: 26px;
+    }
+
+    .contenedor-experiencias {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-evento {
+        height: auto;
+        min-height: 210px;
+    }
+
+    .fecha-evento {
+        width: 85px;
+    }
+
+    .info-evento {
+        padding: 20px 12px 12px;
+    }
+
+    .info-evento h3 {
+        font-size: 17px;
+    }
+
+    .datos-evento {
+        flex-wrap: wrap;
+    }
+}
+/* PIE DE PÁGINA - EVENTOS */
+
+.pie-eventos {
+    background-color: var(--marron);
+    color: var(--crema);
+    border-radius: 40px;
+    margin: 10px 15px 25px;
+    padding: 20px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    min-height: 70px;
+    box-sizing: border-box;
+}
+
+.frase-pie {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.redes-pie {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-left: 1px solid var(--crema);
+    border-right: 1px solid var(--crema);
+    padding: 0 25px;
+}
+
+.redes-pie span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--crema);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ubicacion-pie {
+    font-size: 18px;
+    white-space: nowrap;
+}
+/* EVENTOS - ADAPTACIÓN MOBILE */
+@media (max-width: 600px) {
+
+    .intro-eventos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 35px 25px;
+    }
+
+    .texto-eventos h1 {
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .descripcion-eventos {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .asterisco-eventos {
+        display: none;
+    }
+
+    .proximos-eventos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0 25px;
+    }
+
+    .tarjeta-evento {
+        width: 100%;
+    }
+
+    .mas-experiencias {
+        padding: 0 25px;
+    }
+
+    .contenedor-experiencias {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .experiencia {
+        min-height: 125px;
+    }
+
+    .pie-eventos {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .frase-pie {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .redes-pie {
+        gap: 15px;
+        padding: 0 12px;
+    }
+
+    .ubicacion-pie {
+        font-size: 13px;
+    }
+}
+
+/* AJUSTE TÍTULO EVENTOS EN MOBILE */
+@media (max-width: 600px) {
+    .titulo-eventos h1 {
+        font-size: 32px;
+        line-height: 1.05;
+    }
+
+    .titulo-eventos h1 span {
+        display: block;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 600px) {
+    .titulo-eventos h1 span:first-child {
+        color: #1C0D02 !important;
+    }
+
+    .titulo-eventos h1 .azul-eventos {
+        color: #3543CE !important;
+    }
+}
+
+/* AJUSTE FOOTER EVENTOS EN MOBILE */
+@media (max-width: 600px) {
+  .pie-eventos {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 8px;
+  }
+
+  .frase-pie {
+    font-size: 10px;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  .redes-pie {
+    gap: 8px;
+    padding: 0 5px;
+  }
+
+  .redes-pie span {
+    font-size: 16px;
+  }
+
+  .ubicacion-pie {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
+
+
+/* ==================================
+   PÁGINA RESERVAS
+================================== */
+
+.portada-reservas {
+    min-height: 455px;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("img/reservas_png.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+
+.texto-portada-reservas h1 {
+    color: var(--crema);
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.texto-portada-reservas h1 span {
+    color: var(--amarillo);
+}
+
+.texto-portada-reservas p {
+    color: var(--crema);
+    font-size: 21px;
+    line-height: 1.3;
+    margin-top: 18px;
+}
+
+.formulario-reservas {
+    background-color: var(--azul);
+    border: 1px solid var(--crema);
+    border-radius: 30px;
+    padding: 20px 30px 30px;
+    width: 64%;
+    margin: -220px 3.5% 40px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.formulario-reservas h2 {
+    color: var(--crema);
+    font-size: 55px;
+    margin: 0 0 5px;
+    font-weight: 900;
+}
+
+.formulario-reservas > p {
+    color: var(--crema);
+    font-size: 21px;
+    margin: 0 0 18px;
+}
+
+.campos-reserva {
+    background-color: var(--crema);
+    border-radius: 22px;
+    padding: 12px 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 65px;
+    row-gap: 25px;
+}
+
+.campo-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo-reserva label {
+    color: var(--marron);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.campo-reserva input,
+.campo-reserva select {
+    width: 100%;
+    height: 53px;
+    border: 2px solid #A5A5A5;
+    border-radius: 17px;
+    background-color: var(--crema);
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--marron);
+}
+
+.boton-reservar {
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--rojo);
+    color: var(--crema);
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* QUITAR BORDE SOLO EN INICIO, JUEGOS Y RESERVAS */
+
+.sin-borde header {
+    border: none;
+}
+
+/* =================================
+   PAGINA CONTACTO
+================================= */
+
+.pagina-contacto {
+    background-color: var(--crema);
+    padding: 30px 3%;
+}
+
+.contenido-contacto {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 50px;
+    align-items: center;
+    min-height: 700px;
+}
+
+.info-contacto h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.info-contacto p {
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.formulario-contacto {
+    background-color: var(--amarillo);
+    border-radius: 30px;
+    padding: 35px;
+}
+
+.formulario-contacto h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto p {
+    margin-bottom: 35px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 2px solid #999;
+    border-radius: 16px;
+    background-color: var(--crema);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--marron);
+}
+
+.formulario-contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--rojo);
+    color: var(--crema);
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.footer-contacto {
+    background-color: var(--marron);
+    color: var(--crema);
+    border-radius: 40px;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* DATOS DE CONTACTO */
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 80px;
+    max-width: 530px;
+}
+
+.dato-contacto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #8b8175;
+}
+
+.dato-contacto:last-child {
+    border-bottom: none;
+}
+
+.icono-contacto {
+    width: 66px;
+    height: 66px;
+    min-width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 30px;
+    color: var(--marron);
+}
+
+.icono-contacto.amarillo {
+    background-color: var(--amarillo);
+}
+
+.icono-contacto.rojo {
+    background-color: var(--rojo);
+}
+
+.icono-contacto.azul {
+    background-color: var(--azul);
+}
+
+.dato-contacto h3 {
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.dato-contacto p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ICONOS DE REDES SOCIALES - CONTACTO */
+
+.iconos-redes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.iconos-redes i {
+    font-size: 23px;
+    color: var(--crema);
+}
+
+.separador-redes {
+    margin: 0 12px;
+}
+
+/* ALINEACIÓN DEL FOOTER DE CONTACTO */
+
+.redes-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.iconos-redes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.separador-redes {
+    margin: 0 4px;
+}
+
+/* SEPARACIÓN ENTRE FORMULARIO Y FOOTER */
+.footer-contacto {
+    margin-top: 25px;
+}
+
+/* CONTACTO - VERSION MOBILE */
+
+@media (max-width: 600px) {
+
+    .pagina-contacto {
+        padding: 25px 20px;
+    }
+
+    .contenido-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+        min-height: auto;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .info-contacto h1 {
+        font-size: 42px;
+    }
+
+    .formulario-contacto {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+    .footer-contacto {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+
+/* Pestaña activa del menú */
+nav a.pagina-activa {
+    position: relative;
+}
+
+nav a.pagina-activa::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 3px;
+    background-color: var(--azul);
+    border-radius: 2px;
+}
+
+/* VIDEO DE PORTADA */
+.portada {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.video-portada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 13, 2, 0.45);
+    z-index: -1;
+}
