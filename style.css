@@ -729,7 +729,8 @@ background-image:
         grid-row: auto;
         width: 100%;
         max-width: 450px;
-        height: 342px;
+        min-height: 342px;
+        height: auto;
     }
 
     .bloque-carta h3 {
@@ -1970,4 +1971,243 @@ nav a.pagina-activa::after {
         font-size: 42px;
         line-height: 1.1;
     }
+}
+
+/* BOTONES PARA AGREGAR PRODUCTOS AL CARRITO */
+
+.precio-producto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.precio-producto span {
+    font-size: 17px;
+}
+
+.agregar-carrito {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--azul);
+    color: var(--crema);
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.agregar-carrito:hover {
+    transform: scale(1.1);
+}
+
+/* MÁS ESPACIO ENTRE LAS BEBIDAS */
+.bloque-carta.bebidas .producto-carta {
+    padding: 10px 0;
+}
+
+/* AGRANDAR EL BLOQUE DE BEBIDAS */
+.bloque-carta.bebidas {
+    height: auto;
+    min-height: 390px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: -40px;
+}
+
+.bloque-carta.bebidas .lista-carta {
+    height: auto;
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+/* ACERCAR POSTRES A COMIDA Y SNACKS */
+.bloque-carta.postres {
+    margin-top: -150px;
+}
+
+/* PANEL DEL CARRITO */
+.panel-carrito {
+    width: 90%;
+    max-width: 750px;
+    box-sizing: border-box;
+    margin: 20px auto 30px;
+    padding: 25px 30px;
+    background-color: var(--azul);
+    border-radius: 22px;
+    color: var(--crema);
+}
+
+.panel-carrito h3 {
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.panel-carrito p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+#productos-carrito {
+    background-color: var(--crema);
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+
+#total-carrito {
+    font-weight: bold;
+}
+
+/* TEXTO ROJO DEL CARRITO */
+/* COLORES DEL CARRITO */
+.panel-carrito h3,
+.panel-carrito > p {
+    color: var(--gris);
+}
+
+.panel-carrito #productos-carrito,
+.panel-carrito #productos-carrito * {
+    color: var(--marron);
+}
+
+
+/* DISEÑO DE LOS DATOS DEL PEDIDO */
+
+.datos-pedido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.datos-pedido input,
+.datos-pedido select 
+.datos-pedido textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 2px solid var(--crema);
+    border-radius: 10px;
+    background-color: var(--crema);
+    color: var(--marron);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.datos-pedido input:focus,
+.datos-pedido select:focus,
+.datos-pedido textarea:focus {
+    border-color: var(--amarillo);
+}
+
+#direccion-cliente,
+#aclaraciones,
+#enviar-whatsapp {
+    grid-column: 1 / -1;
+}
+
+#enviar-whatsapp {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--rojo);
+    color: var(--crema);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#enviar-whatsapp:hover {
+    transform: scale(1.02);
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 600px) {
+    .datos-pedido {
+        grid-template-columns: 1fr;
+    }
+
+    #direccion-cliente,
+    #enviar-whatsapp {
+        grid-column: auto;
+    }
+}
+/* AJUSTES DE ACLARACIONES Y CAMPOS DEL CARRITO */
+
+.datos-pedido #direccion-cliente,
+.datos-pedido #aclaraciones,
+.datos-pedido #enviar-whatsapp {
+    grid-column: 1 / -1;
+}
+
+.datos-pedido input,
+.datos-pedido select,
+.datos-pedido textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 2px solid var(--crema);
+    border-radius: 10px;
+    background: var(--crema);
+    color: var(--marron);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.datos-pedido textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+
+/* PRODUCTOS Y CANTIDADES DEL CARRITO */
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+
+.cantidad-carrito {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--marron);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+
+    .bloque-carta.bebidas {
+        margin-top: 0;
+    }
+
+    .bloque-carta.postres {
+        margin-top: 0;
+    }
+
 }

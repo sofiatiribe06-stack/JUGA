@@ -32,8 +32,36 @@
             <a href="eventos.html">Eventos</a>
             <a href="reservas.html">Reservas</a>
             <a href="contacto.html">Contacto</a>
+            <a href="#" class="enlace-carrito">
+    🛒 <span id="contador-carrito">0</span>
+</a>
         </nav>
         </header>
+
+<div id="panel-carrito" class="panel-carrito">
+    <h3>MI CARRITO</h3>
+
+    <div id="productos-carrito"></div>
+
+    <p>Total: $ <span id="total-carrito">0</span></p>
+
+    <div class="datos-pedido">
+        <input type="text" id="nombre-cliente" placeholder="Tu nombre">
+
+        <select id="modalidad-pedido">
+            <option value="">¿Cómo querés recibir tu pedido?</option>
+            <option value="Retiro por el local">Retiro por el local</option>
+            <option value="Envío a domicilio">Envío a domicilio</option>
+        </select>
+
+        <input type="text" id="direccion-cliente" placeholder="Dirección (si es envío)">
+        <textarea id="aclaraciones" placeholder="Aclaraciones (opcional)"></textarea>
+
+        <button id="enviar-whatsapp">
+            ENVIAR PEDIDO POR WHATSAPP
+        </button>
+    </div>
+</div>
 
 <main>
 <!-- SECCIÓN CARTA -->
@@ -53,28 +81,50 @@
         <div class="lista-carta">
 
             <div class="producto-carta">
-                <div>
-                    <strong>Hamburguesa JUGA</strong>
-                    <p>Carne, cheddar, cebolla caramelizada y papas.</p>
-                </div>
-                <span>$ 9.500</span>
-            </div>
+    <div>
+        <strong>Hamburguesa JUGA</strong>
+        <p>Carne, cheddar, cebolla caramelizada y papas.</p>
+    </div>
+
+    <div class="precio-producto">
+        <span>$ 9.500</span>
+        <button class="agregar-carrito"
+                data-nombre="Hamburguesa JUGA"
+                data-precio="9500">
+            +
+        </button>
+    </div>
+</div>
 
             <div class="producto-carta">
-                <div>
-                    <strong>Wrap de Pollo</strong>
-                    <p>Con vegetales, salsa JUGA y papas.</p>
-                </div>
-                <span>$ 8.500</span>
-            </div>
+    <div>
+        <strong>Wrap de Pollo</strong>
+        <p>Con vegetales, salsa JUGA y papas.</p>
+    </div>
+    <div class="precio-producto">
+        <span>$ 8.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Wrap de Pollo"
+            data-precio="8500">
+            +
+        </button>
+    </div>
+</div>
 
             <div class="producto-carta">
-                <div>
-                    <strong>Milanesa</strong>
-                    <p>Con papas o ensalada.</p>
-                </div>
-                <span>$ 9.500</span>
-            </div>
+    <div>
+        <strong>Milanesa</strong>
+        <p>Con papas o ensalada.</p>
+    </div>
+    <div class="precio-producto">
+        <span>$ 9.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Milanesa"
+            data-precio="9500">
+            +
+        </button>
+    </div>
+</div>
 
         </div>
     </div>
@@ -84,31 +134,53 @@
     <div class="lista-carta">
 
         <div class="producto-carta">
-            <div>
-                <strong>Papas Clásicas</strong>
-                <p>Con salsa juga.</p>
-            </div>
-            <span>$ 4.500</span>
-        </div>
+    <div>
+        <strong>Papas Clásicas</strong>
+        <p>Con salsa juga.</p>
+    </div>
+    <div class="precio-producto">
+        <span>$ 4.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Papas Clásicas"
+            data-precio="4500">
+            +
+        </button>
+    </div>
+</div>
 
         <div class="producto-carta">
-            <div>
-                <strong>Papas con cheddar</strong>
-                <p>Cheddar y verdeo.</p>
-            </div>
-            <span>$ 5.500</span>
-        </div>
+    <div>
+        <strong>Papas con cheddar</strong>
+        <p>Cheddar y verdeo.</p>
+    </div>
+    <div class="precio-producto">
+        <span>$ 5.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Papas con cheddar"
+            data-precio="5500">
+            +
+        </button>
+    </div>
+</div>
 
         <div class="producto-carta">
-            <div>
-                <strong>Nachos</strong>
-                <p>Con palta y crema.</p>
-            </div>
-            <span>$ 7.000</span>
-        </div>
+    <div>
+        <strong>Nachos</strong>
+        <p>Con palta y crema.</p>
+    </div>
+    <div class="precio-producto">
+        <span>$ 7.000</span>
+        <button class="agregar-carrito"
+            data-nombre="Nachos"
+            data-precio="7000">
+            +
+        </button>
+    </div>
+</div>
 
     </div>
 </div>
+
 
 <!-- BEBIDAS -->
 <div class="bloque-carta bebidas">
@@ -117,22 +189,34 @@
 
         <div class="producto-carta">
             <div><strong>Agua</strong></div>
-            <span>$ 1.500</span>
+            <div class="precio-producto">
+                <span>$ 1.500</span>
+                <button class="agregar-carrito" data-nombre="Agua" data-precio="1500">+</button>
+            </div>
         </div>
 
         <div class="producto-carta">
             <div><strong>Gaseosa</strong></div>
-            <span>$ 2.000</span>
+            <div class="precio-producto">
+                <span>$ 2.000</span>
+                <button class="agregar-carrito" data-nombre="Gaseosa" data-precio="2000">+</button>
+            </div>
         </div>
 
         <div class="producto-carta">
             <div><strong>Limonada</strong></div>
-            <span>$ 3.000</span>
+            <div class="precio-producto">
+                <span>$ 3.000</span>
+                <button class="agregar-carrito" data-nombre="Limonada" data-precio="3000">+</button>
+            </div>
         </div>
 
         <div class="producto-carta">
             <div><strong>Cerveza tirada</strong></div>
-            <span>$ 3.500</span>
+            <div class="precio-producto">
+                <span>$ 3.500</span>
+                <button class="agregar-carrito" data-nombre="Cerveza tirada" data-precio="3500">+</button>
+            </div>
         </div>
 
         <div class="producto-carta">
@@ -140,7 +224,10 @@
                 <strong>Tragos clásicos</strong>
                 <p>Fernet, Gin Tonic, Cuba, etc.</p>
             </div>
-            <span>$ 4.500</span>
+            <div class="precio-producto">
+                <span>$ 4.500</span>
+                <button class="agregar-carrito" data-nombre="Tragos clásicos" data-precio="4500">+</button>
+            </div>
         </div>
 
         <div class="producto-carta">
@@ -148,7 +235,10 @@
                 <strong>Tragos de autor</strong>
                 <p>Opciones de la casa.</p>
             </div>
-            <span>$ 5.000</span>
+            <div class="precio-producto">
+                <span>$ 5.000</span>
+                <button class="agregar-carrito" data-nombre="Tragos de autor" data-precio="5000">+</button>
+            </div>
         </div>
 
     </div>
@@ -160,33 +250,207 @@
     <div class="lista-carta">
 
         <div class="producto-carta">
-            <div>
-                <strong>Brownie</strong>
-                <p>Con bocha de helado (crema americana).</p>
-            </div>
-            <span>$ 4.500</span>
-        </div>
+    <div>
+        <strong>Brownie</strong>
+        <p>Con bocha de helado (crema americana).</p>
+    </div>
+
+    <div class="precio-producto">
+        <span>$ 4.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Brownie"
+            data-precio="4500">
+            +
+        </button>
+    </div>
+</div>
 
         <div class="producto-carta">
-            <div>
-                <strong>Cheesecake</strong>
-                <p>Con vegetales, salsa juga y papas.</p>
-            </div>
-            <span>$ 4.500</span>
-        </div>
+    <div>
+        <strong>Cheesecake</strong>
+        <p>Con vegetales, salsa juga y papas.</p>
+    </div>
+
+    <div class="precio-producto">
+        <span>$ 4.500</span>
+        <button class="agregar-carrito"
+            data-nombre="Cheesecake"
+            data-precio="4500">
+            +
+        </button>
+    </div>
+</div>
 
         <div class="producto-carta">
-            <div>
-                <strong>Helado</strong>
-                <p>Vainilla, chocolate o dulce de leche.</p>
-            </div>
-            <span>$ 3.000</span>
-        </div>
+    <div>
+        <strong>Helado</strong>
+        <p>Vainilla, chocolate o dulce de leche.</p>
+    </div>
+
+    <div class="precio-producto">
+        <span>$ 3.000</span>
+        <button class="agregar-carrito"
+            data-nombre="Helado"
+            data-precio="3000">
+            +
+        </button>
+    </div>
+</div>
 
     </div>
 </div>
 </section>
 </main>
+
+<script>
+    let carrito = [];
+
+    const numeroCarrito = document.getElementById("contador-carrito");
+    const botonesAgregar = document.querySelectorAll(".agregar-carrito");
+    const panelCarrito = document.getElementById("panel-carrito");
+    const productosCarrito = document.getElementById("productos-carrito");
+    const totalCarrito = document.getElementById("total-carrito");
+    const enlaceCarrito = document.querySelector(".enlace-carrito");
+
+    panelCarrito.style.display = "none";
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", function() {
+            const nombre = this.dataset.nombre;
+            const precio = Number(this.dataset.precio);
+
+            carrito.push({ nombre, precio });
+            actualizarCarrito();
+        });
+    });
+
+    
+function actualizarCarrito() {
+    productosCarrito.innerHTML = "";
+    let total = 0;
+
+    const agrupados = [];
+
+    carrito.forEach(producto => {
+        const existente = agrupados.find(p =>
+            p.nombre === producto.nombre && p.precio === producto.precio
+        );
+
+        if (existente) {
+            existente.cantidad++;
+        } else {
+            agrupados.push({
+                nombre: producto.nombre,
+                precio: producto.precio,
+                cantidad: 1
+            });
+        }
+    });
+
+    agrupados.forEach(producto => {
+        const fila = document.createElement("div");
+        fila.className = "item-carrito";
+
+        const nombre = document.createElement("span");
+        nombre.textContent = producto.nombre + " - $ " +
+            producto.precio.toLocaleString("es-AR");
+
+        const cantidad = document.createElement("span");
+        cantidad.textContent = producto.cantidad;
+
+        const menos = document.createElement("button");
+        menos.textContent = "−";
+        menos.className = "cantidad-carrito";
+
+        const mas = document.createElement("button");
+        mas.textContent = "+";
+        mas.className = "cantidad-carrito";
+
+        mas.addEventListener("click", () => {
+            carrito.push({
+                nombre: producto.nombre,
+                precio: producto.precio
+            });
+            actualizarCarrito();
+        });
+
+        menos.addEventListener("click", () => {
+            const indice = carrito.findIndex(p =>
+                p.nombre === producto.nombre && p.precio === producto.precio
+            );
+
+            if (indice !== -1) {
+                carrito.splice(indice, 1);
+            }
+
+            actualizarCarrito();
+        });
+
+        const controles = document.createElement("div");
+        controles.className = "controles-cantidad";
+        controles.append(menos, cantidad, mas);
+
+        fila.append(nombre, controles);
+        productosCarrito.appendChild(fila);
+
+        total += producto.precio * producto.cantidad;
+    });
+
+    numeroCarrito.textContent = carrito.length;
+    totalCarrito.textContent = total.toLocaleString("es-AR");
+}
+
+
+    enlaceCarrito.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        panelCarrito.style.display =
+            panelCarrito.style.display === "none" ? "block" : "none";
+    });
+    document.getElementById("enviar-whatsapp").addEventListener("click", function() {
+
+    const nombre = document.getElementById("nombre-cliente").value.trim();
+    const modalidad = document.getElementById("modalidad-pedido").value;
+    const direccion = document.getElementById("direccion-cliente").value.trim();
+
+    if (carrito.length === 0) {
+        alert("Primero agregá productos al carrito.");
+        return;
+    }
+
+    if (nombre === "" || modalidad === "") {
+        alert("Completá tu nombre y la modalidad del pedido.");
+        return;
+    }
+
+    if (modalidad === "Envío a domicilio" && direccion === "") {
+        alert("Completá tu dirección de entrega.");
+        return;
+    }
+
+    const total = carrito.reduce((suma, producto) => suma + producto.precio, 0);
+
+    const productos = carrito.map(producto =>
+        "• " + producto.nombre + " - $ " + producto.precio.toLocaleString("es-AR")
+    ).join("\n");
+
+    let mensaje = "¡Hola JUGA! Quiero realizar un pedido.\n\n";
+    mensaje += "Nombre: " + nombre + "\n";
+    mensaje += "Modalidad: " + modalidad + "\n";
+
+    if (modalidad === "Envío a domicilio") {
+        mensaje += "Dirección: " + direccion + "\n";
+    }
+
+    mensaje += "\nMI PEDIDO:\n" + productos;
+    mensaje += "\n\nTOTAL: $ " + total.toLocaleString("es-AR");
+
+    const telefono = "5493764662108";
+    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+});
+</script>
 
 </body>
 </html>
